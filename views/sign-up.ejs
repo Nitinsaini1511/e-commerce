@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs") %>
+<body>
+    
+    <div class="sign-up-start">
+        <h1> SHOESTRUCK</h1>
+        <form action = "/ShoeStruck/sign-up" method="POST" class="sign-up">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter Name" id="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter Email" id="email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter phone numnber" id="phone" pattern="[0-9]{10}" required>
+
+            <label for="password">Passwoed</label>
+            <input type="password" name="password" placeholder="Enter password" id="password" required>
+            
+            <button>submit</button>
+
+            <a href="/ShoeStruck/log-in">Already have account Log-in</a>
+
+        </form>
+    </div>
+
+</body>
+</html>

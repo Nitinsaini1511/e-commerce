@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs") %>
+<body>
+    
+    <div class="log-in">
+        <h1> SHOESTRUCK </h1>
+        <form action = "/ShoeStruck/log-in" method="POST">
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter Email" id="email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter password" id="password" required>
+
+            <button>submit</button>
+
+            <a href="/ShoeStruck/sign-up">Don't have account</a>
+        </form>
+    </div>
+
+</body>
+</html>

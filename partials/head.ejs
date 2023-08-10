@@ -1,0 +1,145 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeStruck | <%= title %></title>
+
+    <style>
+        /*body*/
+        body{
+            max-width:25cm;
+            margin: 20px auto;
+            padding: 0 20px;
+            max-height:15cm;
+            background-color: palevioletred;
+        }
+
+        p,h1,h2,h3,a,ul{
+            margin:0;
+            padding:0;
+            text-decoration:none;
+            color:#222;
+        }
+        a:hover{
+            color:#4a0eed
+        }
+
+        /*nav*/
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom : 60px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+        }
+
+
+        .topic ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .topic li{
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        .sub-topic ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .sub-topic li{
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        /*nav bar second*/
+        .men_shoes{
+            background-color: pink;
+            color:rgb(245, 16, 104);
+            padding:10px;
+            font-size:12px;
+        }
+
+        .men{
+            display:inline-block;
+            position: relative;
+        }
+
+        .men_content{
+            position: absolute;
+            background-color: #f05aa5;
+            min-width: 200px;
+            display:none;
+            z-index:1;
+        }
+
+        .men_content a{
+            color:black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display:block;
+        }
+        .men_content a:hover{
+            background-color: rgb(233, 25, 216);
+        }
+        .men:hover .men_content{
+            display:block;
+        }
+        .men:hover .men_shoes{
+            background-color: rgb(240, 100, 247);
+        }
+        /*sign-up*/
+        .sign-up{
+            display: flex;
+            align-items: center;
+            gap: 0.6cm;
+            flex-direction: column;
+        }
+        .sign-up-start{
+            display: flex;
+            align-items: center;
+            gap: 2cm;
+            flex-direction: column;
+        }
+
+        label{
+            font-size: 30px;
+            color:rgb(245, 16, 104);
+            background-color:pink;
+        }
+
+        .sign-up-start h1{
+
+            font-size: 50px;
+            color:rgb(245,16,104);
+            background-color:pink;
+
+        }
+
+        .sign-up input{
+
+            width:6cm;
+            height:1.5cm;
+            font-size:15px;
+        }
+        .sign-up button{
+
+            width:4cm;
+            height:1cm;
+            font-size:15px;
+
+        }
+        .sign-up a{
+
+            font-size:20px;
+
+        }
+
+    </style>
+
+</head>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head.ejs") %>
+<body>
+    <%- include("../partials/nav.ejs") %>
+
+    <div class="profile_data">
+        <h2>Your Profile</h2>
+        <h3><%= data.name %></h3>
+        <h3><%= data.email %></h3>
+        <h3><%= data.phone %></h3>
+        <h3><%= data.password %></h3>
+    </div>
+
+</body>
+</html>
